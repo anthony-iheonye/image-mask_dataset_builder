@@ -77,6 +77,16 @@ for images, masks in builder.image_mask_dataset:
     ...
 ```
 
-You can find a [Jupyter Notebook of examples](./practice_exercise.ipynb) that demonstrate how to use the `ImageAndMaskDatasetBuilder` class in practice.
+Here is are [examples](./practice_exercise.ipynb) demonstrating how to use the 
+`ImageAndMaskDatasetBuilder` class in practice.
 
 
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Author
+
+Developed by [Anthony Iheonye](https://github.com/anthony-iheonye) | [LinkedIn](https://www.linkedin.com/in/anthony-iheonye/)
