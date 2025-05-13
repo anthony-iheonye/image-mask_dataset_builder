@@ -1,5 +1,15 @@
 # `ImageAndMaskDatasetBuilder` Documentation
 
+## Table of Contents
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Constructor](#constructor)
+- [Arguments](#arguments)
+- [Output](#output)
+- [Practice Examples](#practice-examples)
+- [License](#license)
+- [Author](#author)
+
 ## Overview
 
 `ImageAndMaskDatasetBuilder` is a powerful utility class that streamlines the preprocessing 
@@ -77,8 +87,8 @@ for images, masks in builder.image_mask_dataset:
     ...
 ```
 
-Here is are [examples](./practice_exercise.ipynb) demonstrating how to use the 
-`ImageAndMaskDatasetBuilder` class in practice.
+## Practice Examples
+Explore the following [notebook](./practice_exercise.ipynb) for step-by-step usage examples.
 
 
 ## License
