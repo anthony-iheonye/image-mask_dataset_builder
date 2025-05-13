@@ -101,7 +101,7 @@ ImageAndMaskDatasetBuilder(
 | `batch_size`               | `int`, optional             | Batch size for the dataset. If `None`, batching is skipped.                                              |
 | `shuffle_buffer_size`      | `int`, optional             | Buffer size for dataset shuffling. If `None`, no shuffling is applied.                                   |
 | `prefetch_data`            | `bool`, optional            | Whether to prefetch data for performance. Uses TensorFlow AUTOTUNE.                                      |
-
+---
 ## Output Dataset
 After calling `.run()`, the `.image_mask_dataset` attribute will contain a tf.data.Dataset of
 (image_tensor, mask_tensor) pairs — fully preprocessed and ready for training.
@@ -114,7 +114,7 @@ builder.run()
 for images, masks in builder.image_mask_dataset:
     ...
 ```
-
+---
 ## Practice Examples
 Explore this [Jupyter Notebook](./practice_exercise.ipynb) for hands-on examples showing how to:
 - Load real datasets
