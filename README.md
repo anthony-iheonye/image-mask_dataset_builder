@@ -3,12 +3,14 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Key Features](#key-features)
+- [Getting Started](#getting-started)
 - [Constructor](#constructor)
 - [Arguments](#arguments)
-- [Output](#output)
+- [Output Dataset](#output-dataset)
 - [Practice Examples](#practice-examples)
 - [License](#license)
 - [Author](#author)
+
 
 ## Overview
 
@@ -35,6 +37,32 @@ preprocessing steps including:
 - Mask channel splitting for multi-class segmentation
 - Integrated shuffling, batching, and prefetching
 - Efficient input pipeline powered by TensorFlow's `tf.data.Dataset`
+
+---
+## Getting Started
+
+### Prerequisites
+
+- Python 3.10+
+- pip ≥ 23.3.1 (Python package manager)
+
+### a. Clone the repository
+
+First, clone the Morph and Split repo to your local machine:
+
+```bash
+git clone https://github.com/anthony-iheonye/image-mask_dataset_builder.git
+cd image-mask_dataset_builder
+```
+
+### b. Set up backend
+
+```bash
+python3 -m venv ms_venv           # create a virtual environment, ms_venv.
+source ms_venv/bin/activate       # activate the ms_venv
+pip install --upgrade pip         # upgrade pip
+pip install -r requirements.txt   # Install dependencies
+```
 
 ---
 
@@ -74,7 +102,7 @@ ImageAndMaskDatasetBuilder(
 | `shuffle_buffer_size`      | `int`, optional             | Buffer size for dataset shuffling. If `None`, no shuffling is applied.                                   |
 | `prefetch_data`            | `bool`, optional            | Whether to prefetch data for performance. Uses TensorFlow AUTOTUNE.                                      |
 
-## Output
+## Output Dataset
 After calling `.run()`, the `.image_mask_dataset` attribute will contain a tf.data.Dataset of
 (image_tensor, mask_tensor) pairs — fully preprocessed and ready for training.
 
@@ -88,7 +116,13 @@ for images, masks in builder.image_mask_dataset:
 ```
 
 ## Practice Examples
-Explore the following [notebook](./practice_exercise.ipynb) for step-by-step usage examples.
+Explore this [Jupyter Notebook](./practice_exercise.ipynb) for hands-on examples showing how to:
+- Load real datasets
+- Crop and resize image-mask pairs
+- Normalize images
+- Split masks into binary channels
+- Batch, shuffle and prefetch data
+- Preview data with Matplotlib
 
 
 ## License
