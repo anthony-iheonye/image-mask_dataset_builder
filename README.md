@@ -44,6 +44,7 @@ ImageAndMaskDatasetBuilder(
     batch_size: Optional[int] = None,
     shuffle_buffer_size: Optional[int] = None,
     prefetch_data: bool = None,
+)
 ```
 
 ## Arguments
@@ -75,5 +76,7 @@ builder.run()
 for images, masks in builder.image_mask_dataset:
     ...
 ```
+
+You can find a [Jupyter Notebook of examples](./practice_exercise.ipynb) that demonstrate how to use the `ImageAndMaskDatasetBuilder` class in practice.
 
 
