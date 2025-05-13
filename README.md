@@ -47,8 +47,7 @@ preprocessing steps including:
 - pip ≥ 23.3.1 (Python package manager)
 
 ### a. Clone the repository
-
-First, clone the Morph and Split repo to your local machine:
+Clone the `Image-Mask Dataset` repo to your local machine:
 
 ```bash
 git clone https://github.com/anthony-iheonye/image-mask_dataset_builder.git
