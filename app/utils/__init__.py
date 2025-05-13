@@ -12,4 +12,4 @@ from .directory_file_management import (create_project_directories,
                                         get_file_extension
                                         )
 
-from .display import (imshow, show_images_with_title)
+from .display import (imshow, show_images_with_title, load_show_images)
