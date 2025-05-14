@@ -100,6 +100,7 @@ ImageAndMaskDatasetBuilder(
 | `batch_size`               | `int`, optional             | Batch size for the dataset. If `None`, batching is skipped.                                              |
 | `shuffle_buffer_size`      | `int`, optional             | Buffer size for dataset shuffling. If `None`, no shuffling is applied.                                   |
 | `prefetch_data`            | `bool`, optional            | Whether to prefetch data for performance. Uses TensorFlow AUTOTUNE.                                      |
+| `cache_directory`          | `Optional[str]`             | Path to a directory for caching the dataset to disk. If `None`, caching is skipped.                      |
 ---
 ## Output Dataset
 After calling `.run()`, the `.image_mask_dataset` attribute will contain a tf.data.Dataset of
