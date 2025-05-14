@@ -81,6 +81,7 @@ ImageAndMaskDatasetBuilder(
     batch_size: Optional[int] = None,
     shuffle_buffer_size: Optional[int] = None,
     prefetch_data: bool = None,
+    cache_directory: Optional[str] = None,
 )
 ```
 
