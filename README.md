@@ -117,7 +117,7 @@ for images, masks in builder.image_mask_dataset:
 ```
 ---
 ## Practice Examples
-Explore this [Jupyter Notebook](notebooks/practice_exercise.ipynb) for hands-on examples showing how to:
+Explore this [Jupyter Notebook](notebooks/build_image_mask_pipeline.ipynb) for hands-on examples showing how to:
 - Load real datasets
 - Crop and resize image-mask pairs
 - Normalize images
