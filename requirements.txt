@@ -1,5 +1,6 @@
 absl-py==2.2.2
 astunparse==1.6.3
+attrs==25.3.0
 cachetools==5.5.2
 certifi==2025.4.26
 charset-normalizer==3.4.2
